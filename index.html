@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nama Kamu — Portofolio</title>
+  <meta name="description" content="Portofolio desainer & developer. Membuat produk digital yang terasa hidup." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Blob latar belakang yang bergerak pelan -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <header class="nav">
+    <a href="#" class="logo">nk<span>.</span></a>
+    <nav>
+      <a href="#karya">Karya</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Ganti tema">◐</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="badge reveal"><span class="dot"></span> Terbuka untuk proyek baru</p>
+      <h1 class="reveal">
+        Halo, saya <span class="highlight">Nama Kamu</span> —
+        saya bikin <em>website</em> yang
+        <span class="rotating" data-words="terasa hidup.,mudah dipakai.,nggak ngebosenin.">terasa hidup.</span>
+      </h1>
+      <p class="lead reveal">Desainer &amp; front-end developer dari Indonesia. Suka hal-hal sederhana yang dikerjakan dengan detail.</p>
+      <div class="cta reveal">
+        <a href="#karya" class="btn btn-primary magnetic">Lihat karya ↓</a>
+        <a href="#kontak" class="btn btn-ghost magnetic">Ngobrol yuk</a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>UI Design</span><span>✦</span><span>Web Development</span><span>✦</span>
+        <span>Branding</span><span>✦</span><span>Motion</span><span>✦</span>
+        <span>UI Design</span><span>✦</span><span>Web Development</span><span>✦</span>
+        <span>Branding</span><span>✦</span><span>Motion</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- KARYA: bento grid -->
+    <section id="karya" class="section">
+      <h2 class="section-title reveal">Karya pilihan</h2>
+      <div class="bento">
+        <a href="#" class="card card-lg tilt reveal" style="--accent: #ff7a59">
+          <div class="card-art art-1"></div>
+          <div class="card-body">
+            <span class="tag">Web App · 2026</span>
+            <h3>Kopi Kita — aplikasi pemesanan</h3>
+            <p>Redesain alur pemesanan, konversi naik 32%.</p>
+          </div>
+        </a>
+        <a href="#" class="card tilt reveal" style="--accent: #7c5cff">
+          <div class="card-art art-2"></div>
+          <div class="card-body">
+            <span class="tag">Branding</span>
+            <h3>Studio Lumbung</h3>
+          </div>
+        </a>
+        <a href="#" class="card tilt reveal" style="--accent: #19c39c">
+          <div class="card-art art-3"></div>
+          <div class="card-body">
+            <span class="tag">Landing Page</span>
+            <h3>Jalan-Jalan Travel</h3>
+          </div>
+        </a>
+        <a href="#" class="card card-wide tilt reveal" style="--accent: #ffc83d">
+          <div class="card-art art-4"></div>
+          <div class="card-body">
+            <span class="tag">Dashboard · Open Source</span>
+            <h3>Catatan Keuangan</h3>
+            <p>Dashboard sederhana untuk UMKM.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section about">
+      <div class="about-text reveal">
+        <h2 class="section-title">Sedikit tentang saya</h2>
+        <p>Saya percaya website yang baik itu seperti obrolan yang enak: jelas, ramah, dan punya sedikit kejutan. Sudah 4 tahun saya membantu startup dan UMKM tampil lebih baik di internet.</p>
+        <p>Di luar kerja, saya suka motret jalanan, nyeduh kopi manual, dan main game indie.</p>
+      </div>
+      <div class="stack reveal">
+        <span class="chip">Figma</span><span class="chip">HTML/CSS</span>
+        <span class="chip">JavaScript</span><span class="chip">React</span>
+        <span class="chip">Tailwind</span><span class="chip">GSAP</span>
+        <span class="chip">Framer</span><span class="chip">Webflow</span>
+      </div>
+      <div class="stats reveal">
+        <div><strong data-count="40">0</strong><span>proyek selesai</span></div>
+        <div><strong data-count="25">0</strong><span>klien senang</span></div>
+        <div><strong data-count="4">0</strong><span>tahun pengalaman</span></div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section contact reveal">
+      <h2>Punya ide? <br /><span class="highlight">Ayo wujudkan bareng.</span></h2>
+      <a href="mailto:halo@namakamu.com" class="email magnetic">halo@namakamu.com ↗</a>
+      <div class="socials">
+        <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Dribbble</a><a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Nama Kamu · Dibuat dengan ☕ dan rasa penasaran</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
